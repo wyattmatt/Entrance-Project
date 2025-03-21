@@ -32,7 +32,7 @@ This project contains an HTML-based registration form for OSIS (Organisasi Siswa
 ## Screenshot
 Below is an example screenshot of the registration form:
 
-![Form Pendaftaran Osis](/FormPendaftaranOsis.png)
+<img src="/FormPendaftaranOsis.png" alt="Form Pendaftaran Osis" width="40%" height="40%">
 
 ## Future Enhancements
 - Add JavaScript validation for form fields.
