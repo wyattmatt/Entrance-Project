@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,146 +6,154 @@
     <title>Ole-Ole</title>
 
     <style>
-        .row-span {
-            padding-left: 10px;
-            background-color: white;
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
         }
 
-        /* @media screen and (max-width: 600px) {
-            body, table {
-                display: flex;
-                width: auto;
-                height: 107%;
-                margin-top: -90px;
-                margin-right: 60px;
-                margin-left: -16px;
-                scale: 0.90;
-            }
-        } */
+        th {
+            background-color: blue;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+        }
+
+        table {
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        .row-span {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .last-row {
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
     </style>
 </head>
-<body style="margin-top: 40px;">
-    <table cellspacing="0" align="center" style="border: 2px solid black;">
-        <tr>
-            <th style="padding-top: 8px; padding-bottom: 8px; padding-left: 160px; padding-right: 160px; color: white; background-color: blue; border-bottom: 2px solid black;">FORM PENDAFTARAN OSIS</th>
+<body>
+    <form action="#" method="post">
+        <table cellspacing="0">
             <tr>
-                <td style="padding-left: 10px; padding-top: 10px; background-color: white;">
-                    <form>
-                        <label>Nama Lengkap
-                            <input style="margin-left: 149px;" type="text" placeholder="Nama Lengkap">
-                        </label>
-                    </form>
-                </td>
+                <th align="center" colspan="2">FORM PENDAFTARAN OSIS</th>
             </tr>
-
             <tr>
                 <td class="row-span">
-                    <form>
-                        <label>Nama Panggilan
-                            <input style="margin-left: 141px;" type="text" placeholder="Nama Panggilan">
-                        </label>
-                    </form>
+                    <label>Nama Lengkap</label>
+                </td>
+                <td class="row-span">
+                    <input type="text" placeholder="Nama Lengkap">
                 </td>
             </tr>
-            
             <tr>
                 <td class="row-span">
-                    <form>
-                        <label>Tempat Tanggal Lahir
-                            <input style="margin-left: 106px;" type="text" placeholder="dd/mm/yyyy">
-                        </label>
-                    </form>
+                    <label>Nama Panggilan</label>
+                </td>
+                <td class="row-span">
+                    <input type="text" placeholder="Nama Panggilan">
                 </td>
             </tr>
-
             <tr>
                 <td class="row-span">
-                    <form>
-                        <label>Jenis Kelamin
-                            <span style="padding-left: 157px;">Laki-Laki</span> <input style="margin-left: 4px;" type="radio" name="jenis_kelamin">
-                            Perempuan <input style="margin-left: 4px;" type="radio" name="jenis_kelamin">
-                        </label>
-                    </form>
+                    <label>Tempat Tanggal Lahir</label>
+                </td>
+                <td class="row-span">
+                    <input type="text" placeholder="Tempat Tanggal Lahir">
                 </td>
             </tr>
-
             <tr>
                 <td class="row-span">
-                    <form>
-                        <label>Nomor Telepon
-                            <input style="margin-left: 146px;" type="text" placeholder="Nomor Telepon">
-                        </label>
-                    </form>
+                    <label>Jenis Kelamin</label>
+                </td>
+                <td class="row-span">
+                    <label>Laki-Laki</label>
+                    <input type="radio">
+                    <label>Perempuan</label>
+                    <input type="radio">
                 </td>
             </tr>
-
             <tr>
                 <td class="row-span">
-                    <form>
-                        <label>Jurusan
-                            <span style="padding-left: 198px;">IPA</span> <input style="margin-left: 4px;" type="radio" name="jurusan">
-                            IPS <input style="margin-left: 4px;" type="radio" name="jurusan">
-                            BAHASA <input style="margin-left: 4px;" type="radio" name="jurusan">
-                        </label>
-                    </form>
+                    <label>Nomor Telepon</label>
+                </td>
+                <td class="row-span">
+                    <input type="text" placeholder="Nomor Telepon">
                 </td>
             </tr>
-
             <tr>
                 <td class="row-span">
-                    <form>
-                        <label>Agama
-                            <select style="margin-left: 200px;">
-                                <option>Islam</option>
-                                <option>Kristen</option>
-                                <option>Katolik</option>
-                                <option>Hindu</option>
-                                <option>Buddha</option>
-                                <option>Konghucu</option>
-                            </select>
-                        </label>
-                    </form>
+                    <label>Jurusan</label>
+                </td>
+                <td class="row-span">
+                    <label>IPA</label>
+                    <input type="radio">
+                    <label>IPS</label>
+                    <input type="radio">
+                    <label>BAHASA</label>
+                    <input type="radio">
                 </td>
             </tr>
-
             <tr>
                 <td class="row-span">
-                    <form>
-                        <label>Hobi
-                            <span style="padding-left: 214px;">Membaca Buku</span> <input style="margin-left: 4px;" type="checkbox">
-                            Menulis <input style="margin-left: 4px;" type="checkbox">
-                            dll <input style="margin-left: 4px;" type="checkbox">
-                        </label>
-                    </form>
+                    <label>Agama</label>
+                </td>
+                <td class="row-span">
+                    <select>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katolik</option>
+                        <option>Hindu</option>
+                        <option>Buddha</option>
+                        <option>Konghucu</option>
+                    </select>
                 </td>
             </tr>
-
             <tr>
                 <td class="row-span">
-                    <form>
-                        <label style="display: flex; align-items: center;">Alasan/Motivasi untuk mendaftar
-                            <textarea style="margin-left: 35px;" rows="10" cols="32"></textarea>
-                        </label>
-                    </form>
+                    <label>Hobi</label>
+                </td>
+                <td class="row-span">
+                    <label>Membaca Buku</label>
+                    <input type="checkbox">
+                    <label>Menulis</label>
+                    <input type="checkbox">
+                    <label>dll</label>
+                    <input type="checkbox">
                 </td>
             </tr>
-
             <tr>
                 <td class="row-span">
-                    <form>
-                        <label>Foto 3X4
-                            <input style="margin-left: 185px;" type="file">
-                        </label>
-                    </form>
+                    <label>Alasan/Motivasi untuk mendaftar</label>
+                </td>
+                <td class="row-span">
+                    <textarea rows="10" cols="32"></textarea>
                 </td>
             </tr>
-
             <tr>
-                <td align="center" class="row-span" style="padding-top: 7px; padding-bottom: 13px;">
+                <td class="row-span">
+                    <label>Foto 3X4</label>
+                </td>
+                <td class="row-span">
+                    <input type="file"></input>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2" class="last-row">
                     <button type="submit">Daftar</button>
                     <button type="reset">Reset</button>
                 </td>
             </tr>
-        </tr>
+        </table>
+    </form>
 </body>
 </html>
