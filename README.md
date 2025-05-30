@@ -24,7 +24,7 @@ This project contains an HTML-based registration form for OSIS (Organisasi Siswa
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/wyattmatt/Entrance-Project.git
    ```
 2. Open the `index.html` file in any web browser to view the form.
 3. Fill out the form fields and submit the form.
